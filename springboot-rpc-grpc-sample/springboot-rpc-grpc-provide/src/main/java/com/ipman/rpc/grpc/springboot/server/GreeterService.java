@@ -30,6 +30,6 @@ public class GreeterService extends GreeterGrpc.GreeterImplBase {
         final GreeterOuterClass.HelloReply.Builder replyBuilder = GreeterOuterClass.HelloReply.newBuilder().setMessage(message);
         responseObserver.onNext(replyBuilder.build());
         responseObserver.onCompleted();
-        log.info("Returning " + message);
+        //log.info("Returning " + message);
     }
 }
